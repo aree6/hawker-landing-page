@@ -3,36 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hawker Stall</title>
+  <title>Authentic Hawker Delights</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-yellow-50 text-gray-800 font-sans">
 
-  <header class="bg-yellow-400 p-6 shadow-md">
-    <h1 class="text-3xl font-bold text-center">[Redacted] Hawker Stall</h1>
-    <p class="text-center text-lg mt-2">Delicious local food made fresh daily</p>
-  </header>
-
-  <main class="p-6 max-w-4xl mx-auto">
-    <section class="my-8">
-      <h2 class="text-2xl font-semibold mb-4">Our Menu</h2>
-      <ul class="grid gap-4 md:grid-cols-2">
-        <li class="bg-yellow-100 p-4 rounded shadow">Nasi Lemak</li>
-        <li class="bg-yellow-100 p-4 rounded shadow">Mee Goreng</li>
-        <li class="bg-yellow-100 p-4 rounded shadow">Roti Canai</li>
-        <li class="bg-yellow-100 p-4 rounded shadow">Teh Tarik</li>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-yellow-600">Hawker Delights</h1>
+      <ul class="hidden md:flex space-x-6 text-sm font-medium">
+        <li><a href="#menu" class="hover:text-yellow-500">Menu</a></li>
+        <li><a href="#about" class="hover:text-yellow-500">About</a></li>
+        <li><a href="#reviews" class="hover:text-yellow-500">Reviews</a></li>
+        <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
       </ul>
-    </section>
+    </div>
+  </nav>
 
-    <section class="my-8">
-      <h2 class="text-2xl font-semibold mb-4">Contact Info</h2>
-      <p>Location: Lot 22, Jalan Medan Selera, Kuala Lumpur</p>
-      <p>Phone: [Redacted]</p>
-    </section>
-  </main>
+  <!-- Hero Section -->
+  <section class="bg-yellow-400 text-white py-20 px-6 text-center">
+    <h2 class="text-4xl font-bold mb-4">Authentic Flavors, Street-Style Vibes</h2>
+    <p class="text-lg max-w-xl mx-auto mb-6">Savor traditional Malaysian hawker food made fresh daily with love and heritage.</p>
+    <a href="#menu" class="bg-white text-yellow-600 px-6 py-2 rounded font-semibold hover:bg-yellow-100">View Menu</a>
+  </section>
 
-  <footer class="bg-yellow-400 text-center p-4">
-    <p>&copy; 2025 Hawker Stall. All rights reserved.</p>
+  <!-- Menu Section -->
+  <section id="menu" class="py-16 px-6 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold mb-8 text-center">Our Signature Dishes</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded shadow-md p-4">
+        <h4 class="font-semibold text-lg">Nasi Lemak</h4>
+        <p>Fragrant coconut rice with sambal, anchovies, egg, and peanuts.</p>
+      </div>
+      <div class="bg-white rounded shadow-md p-4">
+        <h4 class="font-semibold text-lg">Char Kway Teow</h4>
+        <p>Wok-fried flat noodles with prawns and Chinese sausage.</p>
+      </div>
+      <div class="bg-white rounded shadow-md p-4">
+        <h4 class="font-semibold text-lg">Roti Canai</h4>
+        <p>Crispy flatbread served with dhal and curry sauce.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-4">Our Story</h3>
+      <p>We are a family-owned hawker stall bringing classic street food recipes passed down through generations. Located in the heart of Kuala Lumpur, we blend tradition with a modern twist for today’s food lovers.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="reviews" class="bg-yellow-100 py-16 px-6">
+    <h3 class="text-2xl font-bold mb-8 text-center">What Our Customers Say</h3>
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="bg-white p-4 rounded shadow">
+        <p>"The best Nasi Lemak I've ever had. Period!"</p>
+        <p class="text-sm text-right mt-2">– Local Foodie</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <p>"Roti Canai was crisp, flaky and full of flavor."</p>
+        <p class="text-sm text-right mt-2">– Tourist from UK</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white py-16 px-6 text-center">
+    <h3 class="text-2xl font-bold mb-4">Visit Us</h3>
+    <p>📍 Lot 22, Jalan Medan Selera, Kuala Lumpur</p>
+    <p>📞 [Redacted]</p>
+    <a href="tel:0123456789" class="mt-4 inline-block bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600">Call Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-400 text-center text-white py-4">
+    <p>&copy; 2025 Hawker Delights. All rights reserved.</p>
   </footer>
 
 </body>
